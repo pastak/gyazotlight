@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+var path = require("path")
+var proc = require("child_process")
+
+var modulePath = path.join(".", "node_modules")
+var compilerPath = path.join(modulePath, ".bin", "electron-compile")
+var pathsToCompile = [
+  path.join(".", "app"),
+]
+var compileCachepath = path.join(".", "compile-cache")
+
+console.log("Compiling...")
+
+var args = [
+  "--target", compileCachepath
+].concat(pathsToCompile)
+proc.spawn(compilerPath, args, {stdio: "inherit"})

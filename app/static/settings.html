@@ -1,0 +1,51 @@
+<style>
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  }
+  label {
+    font-size: 30px;
+  }
+  label > input[type=text] {
+    font-size: 20px;
+    height: 30px;
+  }
+  label > button {
+    font-size: 20px;
+    height: 30px;
+  }
+  .note {
+    font-size: 15px;
+  }
+  .key {
+    background-color: rgb(228, 228, 228);
+    padding: 3px 4px;
+  }
+  #savedHotkey {
+    display: none;
+  }
+  #savedHotkey.show {
+    display: block;
+  }
+</style>
+<body>
+  <h1>Gyazotlight Settings</h1>
+  <label>
+    Global hotkey <input type='text' id='keyComb' placeholder="Ctrl+Shift+G" />
+    <button id='saveHotkey'>Save</button>
+  </label>
+  <br />
+  <span class='note'>
+    Type new hotkey combination on this text fields. <br />
+    You can use
+    <span class='key'>A</span> to <span class='key'>Z</span>,
+    <span class="key">0</span> to <span class="key">9</span> or
+    <span class="key">Space</span>, <span class="key">Delete</span>, <span class="key">Tab</span> <br />
+    with <span class="key">Super(Command)</span>, <span class="key">Alt(Option)</span>, <span class="key">Shift</span>, <span class="key">Control</span>
+  </span>
+  <br />
+  <span id='savedHotkey'>
+    <span style='color: red'>Saved!</span><br />
+    You are able to use new hotkey after close this window.
+  </span>
+  <script src='./settings.js'></script>
+</body>
