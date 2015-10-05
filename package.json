@@ -1,11 +1,12 @@
 {
   "name": "gyazotlight",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "init.js",
   "scripts": {
     "build": "./script/compile && electron-packager ./ Gyazotlight --platform=all --arch=all --version=0.33.3 --prune --asar --out=build --ignore=build --overwrite",
-    "build-mac": "./script/compile && electron-packager ./ Gyazotlight --platform=darwin --arch=x64 --version=0.33.3 --prune --asar  --out=build --ignore=build --overwrite"
+    "build-mac": "./script/compile && electron-packager ./ Gyazotlight --platform=darwin --arch=x64 --version=0.33.3 --prune --asar  --out=build --ignore=build --overwrite",
+    "build-linux": "./script/compile && electron-packager ./ Gyazotlight --platform=linux --arch=x64 --version=0.33.3 --prune --asar  --out=build --ignore=build --overwrite"
   },
   "author": "",
   "license": "MIT",
@@ -15,10 +16,10 @@
     "node-localstorage": "^0.5.0",
     "request-promise": "^0.4.2",
     "resolve-path": "^1.3.0",
-    "yargs": "^3.26.0"
+    "yargs": "^3.26.0",
+    "electron-compile": "^1.0.0"
   },
   "devDependencies": {
-    "electron-compile": "^1.0.0",
     "electron-packager": "^4.1.0",
     "electron-prebuilt": "^0.26.0"
   }
