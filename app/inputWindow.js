@@ -1,5 +1,5 @@
-const app = require('app')
-const BrowserWindow = require('browser-window')
+import app from 'app'
+import BrowserWindow from 'browser-window'
 
 class InputWindow {
   constructor () {

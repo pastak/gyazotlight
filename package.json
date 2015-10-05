@@ -1,6 +1,6 @@
 {
   "name": "gyazotlight",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "init.js",
   "scripts": {
@@ -15,6 +15,7 @@
     "electron-compile": "^1.0.0",
     "mkdirp": "^0.5.1",
     "node-localstorage": "^0.5.2",
+    "react": "^0.13.3",
     "request-promise": "^0.4.2",
     "resolve-path": "^1.3.0",
     "yargs": "^3.26.0"
