@@ -1,5 +1,7 @@
 const app = require('app')
-app.dock.hide()
+if (process.platform === 'darwin') {
+  app.dock.hide()
+}
 const globalShortcut = require('global-shortcut')
 const mkdirp = require('mkdirp')
 const request = require('request-promise')
