@@ -45,7 +45,9 @@ export default class ImageList extends React.Component {
         accept: 'application/json'
       }}).promise().bind(this)
         .then((data) => {
-          data = JSON.parse(data)
+          data = JSON.parse(data).filter((item) => {
+            return item.image_id && item.url
+          })
           const windowHeight = 50 + Math.min(data.length * 60, 360)
           BrowserWindow.getFocusedWindow().setSize(800, windowHeight)
           this.setState({data: data})
