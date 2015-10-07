@@ -13,6 +13,7 @@
   "compileCacheDir": "./compile-cache",
   "dependencies": {
     "electron-compile": "^1.0.0",
+    "electron-packager": "^5.1.0",
     "mkdirp": "^0.5.1",
     "node-localstorage": "^0.5.2",
     "nodejs-websocket": "^1.4.0",
@@ -23,7 +24,6 @@
   },
   "devDependencies": {
     "electron-compilers": "^1.0.0",
-    "electron-packager": "^4.1.0",
     "electron-prebuilt": "^0.26.0"
   }
 }
