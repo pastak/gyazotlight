@@ -20,7 +20,7 @@ You will find Gyazo via IvySearch then copy URL and image blob to clipboard.
 - Appear **Ninja** ![](https://i.gyazo.com/455a4e496abe6b19c09c2abb319a9763.png) in your toolbar.
 - You launch this app by hotkey (default setting is `Ctrl+Shift+G`) or `Launch` menu from **ninja** on toolbar.
 - You can change hotkey settings page (**ninja** -> `setting`)
-- You select gyazo then it copys GyazoURL(`https://gyazo.com/XXXX`), HTML(`<a href='{GyazoURL}'><img src='{GyazoPermalink}'</a>`) and ImageBlob to your clipboard.
+- You select gyazo then it copys GyazoURL(`https://gyazo.com/XXXX`), HTML(`<a href='{GyazoURL}'><img src='{GyazoImageURL}'</a>`) and ImageBlob to your clipboard.
   - You paste on TextEditor as URL
   - You paste on PhotoShop as ImageBlob
   - You paste on Word as HTML
