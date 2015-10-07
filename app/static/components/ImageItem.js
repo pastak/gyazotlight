@@ -41,7 +41,7 @@ export default class ImageItem extends React.Component {
   }
   _forceScroll () {
     const index  = this.props.index
-    const target = React.findDOMNode(this.refs.imageItem)
+    const target = React.findDOMNode(this)
     const targetTop = target.getBoundingClientRect().top - 50
     if (targetTop < 0) {
       document.querySelector('#imageListContainer').scrollTop += targetTop
@@ -73,7 +73,6 @@ export default class ImageItem extends React.Component {
     const image = this.props.image
     return (
       <div
-        ref='imageItem'
         className={`image-list ${this.props.selected ? 'selected' : ''}`}
         onClick={this.enter.bind(this)}
         onMouseOver={this._onMouseOver.bind(this)}
