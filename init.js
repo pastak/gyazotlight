@@ -3,6 +3,7 @@ var argv = require('yargs')
   .default('test', false)
   .default('environment', 'production')
   .argv
+require('crash-reporter').start()
 if (argv.environment == 'production') {
   require('electron-compile').initForProduction(path.join(__dirname, 'compile-cache'))
 }

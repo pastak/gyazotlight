@@ -1,0 +1,20 @@
+#!/bin/sh
+
+hubcommand=`/usr/bin/env which hub`
+headofhubcommandresult=`echo $hubcommand | cut -b1`
+if [ "$headofhubcommandresult" != "/" ]; then
+  echo "You should install hub"
+  exit
+fi
+com="$hubcommand release create "
+
+if [ -n "$1" ]; then
+  tag=$1
+else
+  tag=`git tag | tail -n1`
+fi
+
+for z in ./build/*.zip ; do
+    com="$com -a $z"
+done
+eval "$com $tag"

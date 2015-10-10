@@ -1,0 +1,10 @@
+#!/bin/sh
+
+cd ./build
+
+rm *.zip &> /dev/null
+rm *.app &> /dev/null
+
+for d in * ; do
+    zip -r $d.zip $d
+done
