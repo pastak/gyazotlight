@@ -77,7 +77,7 @@ export default class ImageItem extends React.Component {
         onClick={this.enter.bind(this)}
         onMouseOver={this._onMouseOver.bind(this)}
       >
-        <img src={image['search_thumb_url']} />
+        <img src={image['thumb_url']} />
         <span>
           {image.desc || (image.metadata && image.metadata.title) || image['permalink_url']}
         </span>
