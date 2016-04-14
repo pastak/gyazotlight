@@ -34,3 +34,12 @@ This extensions insert GyazoURL or Markdown on your cursor positon.
 It is very useful :smile:
 
 more detail: https://github.com/pastak/gyazotlight-bridge
+
+# Known Bug(?)
+
+## Windows
+
+After login it will be shown but you can click 'ok' and ignore it. Then you see ninja icon on taskbar.
+
+[![https://gyazo.com/65769c29e0b40d20609a95ee1639450a](https://i.gyazo.com/65769c29e0b40d20609a95ee1639450a.png)](https://gyazo.com/65769c29e0b40d20609a95ee1639450a)
+
